@@ -21,6 +21,7 @@ class ArticlesController < ApplicationController
 
   # GET /articles/1/edit
   def edit
+    authorize! :update, @article
   end
 
   # POST /articles
